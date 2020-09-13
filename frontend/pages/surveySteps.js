@@ -6,6 +6,7 @@ export const STEPS = {
       you are interested in.`,
     buttonLabel: 'Start',
     nextStep: 'experimentType',
+    showGraphic: true,
   },
   experimentType: {
     title: 'Which of the following best describes your experiment?',

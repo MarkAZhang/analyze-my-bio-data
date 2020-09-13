@@ -1,0 +1,31 @@
+@import 'vars.css';
+
+.svg {
+  // Make sure the lines are crisp.
+  shape-rendering: crispEdges;
+}
+
+.vertLine, .medianLine {
+  stroke: black;
+  fill: none;
+}
+
+.box {
+  fill: $primary;
+  stroke: black;
+}
+
+.pValueMarker {
+  stroke: black;
+  fill: none;
+}
+
+.pValue {
+  text-anchor: middle;
+  font-size: 14px;
+}
+
+.axis {
+  stroke: black;
+  fill: none;
+}

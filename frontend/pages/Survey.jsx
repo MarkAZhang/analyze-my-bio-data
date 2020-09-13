@@ -3,8 +3,10 @@ import { Link } from 'react-router-dom'
 import { set } from 'lodash/fp'
 import cx from 'classnames'
 
+import TEST_DATA from '~/data/test_data.csv'
 import Button from '~/components/Button'
 import Icon from '~/components/Icon'
+import BoxPlot from '~/components/BoxPlot'
 import RadioButton from '~/components/RadioButton'
 import Section from '~/core/Section'
 
@@ -74,6 +76,9 @@ class Survey extends Component {
             />
           </div>
         </div>
+        {curStep.showGraphic && (
+          <BoxPlot className={cs.lineChart} data={TEST_DATA} />
+        )}
       </Section>
     )
   }

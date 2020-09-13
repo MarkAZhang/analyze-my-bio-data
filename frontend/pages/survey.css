@@ -82,4 +82,8 @@
       color: $black;
     }
   }
+
+  .lineChart {
+    width: 400px;
+  }
 }

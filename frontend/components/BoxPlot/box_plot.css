@@ -1,0 +1,7 @@
+@import 'vars.css';
+
+.boxPlot {
+  background-color: $primary-lightest;
+  box-shadow: $box-shadow;
+  border: 1px solid $box-shadow-border-color;
+}

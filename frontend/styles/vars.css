@@ -22,7 +22,7 @@ $annotation: #35383A;
 $selected: #4581F4;
 $selected-hover: #7AA8FF;
 
-$box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+$box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
 $box-shadow-border-color: #dddddd;
 
 $page-width: 1200px;
