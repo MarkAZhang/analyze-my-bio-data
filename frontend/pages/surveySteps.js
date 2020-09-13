@@ -1,6 +1,6 @@
 export const STEPS = {
   start: {
-    title: 'Find the best statistical test for your experiment',
+    title: 'Find the best statistical test for your biology experiment',
     subtitle: `This tool will help you choose the best statistical analysis
       method based on the details of your experiment and the scientific question
       you are interested in.`,
