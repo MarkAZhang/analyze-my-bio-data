@@ -1,0 +1,7 @@
+@import 'vars.css';
+
+.section {
+  max-width: calc($page-width - 2 * $page-side-margin);
+  margin: 0 auto;
+  width: calc(100% - 2 * $page-side-margin);
+}

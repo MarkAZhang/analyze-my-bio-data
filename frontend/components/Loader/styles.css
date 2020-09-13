@@ -1,0 +1,7 @@
+.loader {
+  @mixin flex right, center, center;
+}
+
+.loaderIcon {
+  margin-bottom: 10px;
+}

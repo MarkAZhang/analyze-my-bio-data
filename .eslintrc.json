@@ -1,0 +1,70 @@
+{
+  "extends": "airbnb",
+  "plugins": ["babel", "flowtype", "jest"],
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "jest/globals": true
+  },
+  "rules": {
+    "react/sort-comp": [1, {
+      "order": [
+        "type-annotations",
+        "static-methods",
+        "lifecycle",
+        "everything-else",
+        "/^on.+$/",
+        "render"
+      ]
+    }],
+    "arrow-parens": [2, "as-needed"],
+    "comma-dangle": [2, "always-multiline"],
+    "import/default": 2,
+    "import/named": 2,
+    "import/namespace": 2,
+    "import/order": [2, {
+      "newlines-between": "always",
+      "groups": [["builtin", "external"], ["internal", "parent"], "sibling", "index"],
+      "pathGroups": [
+        {
+          "pattern": "~/**",
+          "group": "internal"
+        }
+      ]
+    }],
+    "jsx-quotes": [2, "prefer-single"],
+    "operator-linebreak": [2, "before", {
+      "overrides": {"&&": "after", "||": "after"}
+    }],
+    "no-multiple-empty-lines": [2, {"max": 1, "maxEOF": 1}],
+    "react/react-in-jsx-scope": 0,
+    "react/require-default-props": 0,
+    "semi": [2, "never"],
+    "jsx-a11y/no-static-element-interactions": 0,
+    "jsx-a11y/click-events-have-key-events": 0,
+    "object-curly-spacing": 0,
+    "react/jsx-filename-extension": 2,
+    "no-underscore-dangle": 0,
+    "no-confusing-arrow": 0,
+    "import/prefer-default-export": 0,
+    "no-mixed-operators": 0,
+    "flowtype/define-flow-type": 1,
+    "flowtype/use-flow-type": 1,
+    "lines-between-class-members": [2, "always", {"exceptAfterSingleLine": true}],
+    "template-curly-spacing": 0,
+    "indent": 0,
+    "react/jsx-one-expression-per-line": 0,
+    "react/no-array-index-key": 0,
+    "react/prefer-stateless-function": 0,
+    "import/no-unresolved": 0,
+    "import/extensions": ["error", { "js": "never", "jsx": "never", "csv": "always" }]
+  },
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "extensions": [".js", ".jsx"],
+        "config": "./webpack.config.common.js"
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+@import 'vars.css';
+
+.reference {
+  .name {
+    font-weight: bold;
+  }
+
+  .link {
+    color: $medium-grey;
+  }
+}

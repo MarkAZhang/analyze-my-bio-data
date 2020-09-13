@@ -1,0 +1,85 @@
+@import 'vars.css';
+
+.survey {
+  @mixin flex right;
+  margin-top: 150px;
+
+  &.hasPreviousStep {
+    margin-top: 103px;
+  }
+
+  .text {
+    flex: 1 1 0;
+  }
+
+  .title {
+    @mixin font heroTitle;
+    margin-bottom: 40px;
+    width: 700px;
+    color: $darkest-grey;
+
+    .stat {
+      color: $primary;
+    }
+
+    .editable {
+      color: $medium-grey;
+      /* Customizable but hacky approach to text underlining. */
+      background-image: linear-gradient(to right, $light-grey 70%, transparent 30%);
+      background-position: 0 1.04em;
+      background-repeat: repeat-x;
+      background-size: 8px 2px;
+    }
+
+    .unit {
+      color: $medium-grey;
+    }
+  }
+
+  .subtext {
+    @mixin font subtext;
+    margin-bottom: 20px;
+    width: 650px;
+    color: $medium-grey;
+  }
+
+  .option {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover {
+      .label {
+        color: $medium-grey;
+      }
+    }
+
+    &.disabled {
+      cursor: default;
+
+      .label {
+        color: $light-grey !important;
+      }
+    }
+
+    .label {
+      margin-left: 20px;
+      margin-top: 5px;
+    }
+  }
+
+  .button {
+    margin-top: 60px;
+  }
+
+  .backButton {
+    @mixin font text3;
+    color: $medium-grey;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+    &:hover {
+      color: $black;
+    }
+  }
+}

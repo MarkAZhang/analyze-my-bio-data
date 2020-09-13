@@ -1,0 +1,31 @@
+@import 'vars.css';
+
+.dropdownContainer {
+  position: relative;
+  height: 100%;
+
+  .dropdownMenu {
+    @mixin flex right, center;
+    padding: 0 20px;
+    user-select: none;
+    height: 100%;
+    cursor: pointer;
+
+    .arrow {
+      font-size: 18px;
+      margin-left: 10px;
+      opacity: 0.5;
+    }
+
+    &:hover {
+      background-color: $off-white;
+    }
+  }
+
+  .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+  }
+}

@@ -1,0 +1,17 @@
+@import 'vars.css';
+
+.button {
+  background-color: $primary;
+  color: $white;
+  display: inline-block;
+  padding: 8px 20px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $primary-dark;
+  }
+
+  &.disabled {
+    background-color: $medium-grey !important;
+  }
+}

@@ -1,0 +1,30 @@
+@import 'vars.css';
+
+.radioButton {
+  border: 2px solid $medium-grey;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .inner {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+
+  &.selected {
+    border-color: $primary;
+
+    .inner {
+      background-color: $primary;
+    }
+  }
+
+  &.disabled {
+    border-color: $light-grey;
+  }
+}

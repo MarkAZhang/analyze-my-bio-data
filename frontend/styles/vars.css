@@ -1,0 +1,32 @@
+$black: #000000;
+$darkest-grey: #333333;
+$dark-grey: #666666;
+$medium-grey: #999999;
+$light-grey: #cccccc;
+$lightest-grey: #eaeaea;
+$off-white: #f8f8f8;
+$white: #ffffff;
+
+$primary-dark: #175F78;
+$primary: #1F81A3;
+$primary-lightest: #F8FBFC;
+
+$text: #333333;
+$text-light: #626668;
+$text-inverted: #F0EFF3;
+
+$bg-inverted: #626668;
+
+$annotation: #35383A;
+
+$selected: #4581F4;
+$selected-hover: #7AA8FF;
+
+$box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+$box-shadow-border-color: #dddddd;
+
+$page-width: 1200px;
+$page-side-margin: 50px;
+$text-width: 800px;
+
+$header-height: 60px;

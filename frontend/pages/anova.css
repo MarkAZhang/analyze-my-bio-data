@@ -1,0 +1,16 @@
+@import 'vars.css';
+
+.anova {
+  max-width: calc($page-width - 2 * $page-side-margin);
+  margin: 0 auto;
+  width: calc(100% - 2 * $page-side-margin);
+  padding-top: 60px;
+
+  .title {
+    @mixin font heroTitle;
+  }
+
+  .content {
+    margin-top: 30px;
+  }
+}
